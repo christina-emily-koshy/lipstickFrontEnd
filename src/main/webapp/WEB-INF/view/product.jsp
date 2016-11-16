@@ -5,7 +5,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Product</title>
+<title>STYLEONE||PRODUCTS</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 </head>
 <link href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet" type="text/css">
@@ -15,8 +15,8 @@
 <body>
 
 <div class="jumbotron">
-<h1>STYLEONE</h1>
-<h3>Know About Us</h3>
+<h1><i>STYLE ONE</i></h1>
+<h3>PRODUCTS</h3>
 </div>
   <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
  <div class="navbar-header">
@@ -43,7 +43,11 @@
                </ul>
        
    </nav>
-<p><b>Style One is an e-commerce website offering beauty and wellness products.This website provides various products to groom yourself at the cheapest price.
-Our site Provides a variety of collection in Lipsticks, Eyeliners and Creams.</b></p>
+<h1>${pname}</h1>
+<c:forEach var="listValue" items="${list3}">
+${listValue.pid}
+${listValue.pname}
+${listValue.pdesc} 
+</c:forEach>
 </body>
 </html>

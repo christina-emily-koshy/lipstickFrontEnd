@@ -2,7 +2,10 @@ package com.niit.lipstickfrontend.controller;
 
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class HomeController {
@@ -12,6 +15,13 @@ public class HomeController {
 	{
 	return "home";
 	}
+	
+	@RequestMapping("/Abtus")
+	public String gotoAbtus()
+	{
+	return "Abtus";
+	}
+	
 	@RequestMapping("/Login")
 	public String gotoLogin()
 	{
@@ -23,11 +33,13 @@ public class HomeController {
 	{
 	return "Signup";
 	}
-	@RequestMapping("/abtus")
-	public String gotoabtus()
-	{
-	return "abtus";
+	
+	
+	
+	
+	
+		
+	
 	}
 	
 	
-}

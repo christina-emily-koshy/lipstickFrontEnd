@@ -4,7 +4,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-<title>HOME</title>
+<title>HOME||STYLEONE</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet" type="text/css">
 <script src="<c:url value="/resources/jquery/jquery.min.js"/>" type="text/javascript"> </script>
@@ -22,26 +22,30 @@
 <body>
 
 <div class="jumbotron">
-<h1><font="Algerian">STYLEONE</font></h1>
+<h1><i>STYLE ONE</i></h1>
 </div>
   <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
  <div class="navbar-header">
    
-      <a class="navbar-brand" href="\lipstickFrontEnd\" name="/home"><span class="glyphicon glyphicon-home"></span> Home</a>
+      <a class="navbar-brand"  ><span class="glyphicon glyphicon-home"></span> Home</a>
     </div>
     <ul class="nav navbar-nav">
-      <li ><a href="\lipstickFrontEnd\abtus"><span class="glyphicon glyphicon-education"></span> About us</a></li>
-      <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="category.jsp"><span class="glyphicon glyphicon-heart"></span> Category<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-          <li><a href="/resources/best-lipstick-colors-for-asians-u2.jpg">Lipsticks</a></li>
-          <li><a href="eyeliner.jsp">EyeLiners</a></li>
-          <li><a href="cream.jsp">Creams</a></li>
-        </ul>
-       </li>
+      <li ><a href="Abtus"><span class="glyphicon glyphicon-education"></span> About us</a></li>
+        <li class="dropdown">
+        <a href="" name="prod" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false"><span class="glyphicon glyphicon-heart"></span>Categories<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="product?prod=lipsticks" >Lipsticks</a></li>
+						<li><a href="product?prod=eyeliners">Eyeliners</a></li>
+						<li><a href="product?prod=creams">Creams</a></li>
+					</ul></li>
+			</ul>
+        
+        
       <ul class="nav navbar-nav navbar-right">
-         <li><a href="\lipstickFrontEnd\Signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-         <li><a href="\lipstickFrontEnd\Login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+         <li><a href="Signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+         <li><a href="Login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
                </ul>
        
    </nav>
@@ -64,7 +68,7 @@
     <div class="item ">
       <img src="<c:url value="/resources/img/foundation.jpg" />" >
       <div class="carousel-caption">
-        <h3>Foundation</h3>
+        <h3>Creams</h3>
         <p>Try out our new collections!!!</p>
       </div>
     </div>
