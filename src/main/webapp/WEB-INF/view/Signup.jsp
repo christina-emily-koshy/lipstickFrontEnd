@@ -12,7 +12,6 @@
  
 
 
-
 <title>SignUp</title>
 </head>
 <body>

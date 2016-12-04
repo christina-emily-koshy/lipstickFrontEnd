@@ -27,7 +27,7 @@
   <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
  <div class="navbar-header">
    
-      <a class="navbar-brand"  ><span class="glyphicon glyphicon-home"></span> Home</a>
+      <a class="navbar-brand" href="home" ><span class="glyphicon glyphicon-home"></span> Home</a>
     </div>
     <ul class="nav navbar-nav">
       <li ><a href="Abtus"><span class="glyphicon glyphicon-education"></span> About us</a></li>

@@ -19,8 +19,8 @@ public class ProductController {
 	public String gotoproduct(HttpServletRequest request,ModelMap model)
 	{
 		
-		String prod= request.getParameter("prod");
-		switch(prod)
+		String produ=request.getParameter("prod");
+		switch(produ)
 		{
 		case "lipsticks": model.addAttribute("pname","Lipsticks");
 		break;
@@ -32,7 +32,7 @@ public class ProductController {
 		break;
 		}
 		ProductDaoImple product1=new ProductDaoImple();
-		List<Product> list2 =product1.getProductbyCategory(prod);
+		List<Product> list2=product1.getProductbyCategory(produ);
 		model.addAttribute("list3",list2);
 	    return "product";
 		}
